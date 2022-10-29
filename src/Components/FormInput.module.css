@@ -1,0 +1,53 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+
+.form-input .input {
+  padding: 15px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background: rgb(247, 246, 255);
+}
+
+.form-input .input:focus {
+  border: 2px solid rgb(153, 194, 255);
+}
+
+.form-input .text-area {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  outline: none;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background: rgb(247, 246, 255);
+}
+
+.form-input .text-area:focus {
+  border: 2px solid rgb(153, 194, 255);
+}
+
+.form-input .required {
+  color: red;
+}
+
+.form-input .errorMessage {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+.form-input .input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+.form-input .input:invalid[focused="true"] ~ .errorMessage {
+  display: block;
+}
